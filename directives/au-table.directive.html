@@ -1,0 +1,12 @@
+<table class="table table-bordered table-responsive">
+  <thead>
+    <tr>
+      <th ng-repeat="(key,value) in data[0]">{{key | humanReadable}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="d in data">
+      <td ng-repeat="(key,value) in d">{{value}}</td>
+    </tr>
+  </tbody>
+</table>

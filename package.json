@@ -1,0 +1,13 @@
+{
+  "name": "AngularDemos",
+  "namelower": "ad",
+  "version": "0.0.1",
+  "description": "AngularJS Demos",
+  "readme": "README.md",
+  "devDependencies": {
+    "angular": "1.4.14"
+  },  
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

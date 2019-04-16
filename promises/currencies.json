@@ -1,0 +1,17 @@
+[{
+  "id": 1,
+  "label": "Euro",
+  "code": "EUR"
+}, {
+  "id": 2,
+  "label": "US Dollar",
+  "code": "USD"
+}, {
+  "id": 3,
+  "label": "Indian Rupee",
+  "code": "INR"
+}, {
+  "id": 4,
+  "label": "Australian Dollars",
+  "code": "AUD"
+}]

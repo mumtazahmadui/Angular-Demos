@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Promise Demo</title>
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <base href="/promises">
+</head>
+
+<body ng-app="promiseApp" ng-controller="PromiseAppController">
+  <nav class = "navbar navbar-default" role = "navigation">
+   <div class = "navbar-header">
+      <a class = "navbar-brand">Demo</a>
+   </div>
+   <div>
+      <ul class = "nav navbar-nav">
+         <li ng-class="{ active: isActive('/')}"><a href="#demo1">Promise Need</a></li>
+         <li ng-class="{ active: isActive('/demo2')}"><a href ="#demo2">Promise Example</a></li>
+         <li ng-class="{ active: isActive('/demo3')}"><a href ="#demo3">Resolve Example</a></li>
+         <li ng-class="{ active: isActive('/demo4')}"><a href ="#demo4">Parallel Calls</a></li>
+      </ul>
+   </div>
+</nav>
+  <div class="container">
+    <div>
+      <div ng-view=""></div>
+    </div>
+  </div>
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../bower_components/angular-route/angular-route.min.js"></script>
+  <script src="../promises/promise-app.module.js"></script>
+  <script src="../promises/promise-app.router.js"></script>
+  <script src="../promises/promise-app.controller.js"></script>
+  <script src="../promises/demo1.controller.js"></script>
+  <script src="../promises/demo2.controller.js"></script>
+  <script src="../promises/demo3.controller.js"></script>
+  <script src="../promises/demo4.controller.js"></script>
+</body>
+
+</html>

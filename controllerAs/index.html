@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Controller As</title>
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+</style>
+
+<body ng-app="myApp">
+  <div ng-controller="MyAppController as vm">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Demo</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <input type="text" name="schoolName" class="input" ng-model="vm.schoolName"> {{vm.schoolName}}
+      <hr>
+      <table class="table table-responsive table-bordered">
+        <thead>
+          <th>Student Id</th>
+          <th>Name</th>
+          <th>School Name</th>
+          <th>Updated School Name</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="student in vm.students">
+            <td>{{student.studentId}}</td>
+            <td>{{student.name}}</td>
+            <td>
+              <input type="text" name="name" ng-model="vm.schoolName">
+            </td>
+            <td>{{vm.schoolName}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../controllerAs/myApp.module.js"></script>
+  <script src="../controllerAs/myApp.controller.js"></script>
+</body>
+
+</html>

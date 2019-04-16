@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Watch
+  </title>
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="watchApp">
+  <div ng-controller="WatchAppController">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Demo</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <span>a:{{a}}</span>
+      <label for="b">b:</label>
+      <input type="text" name="b" ng-model="b">
+    </div>
+    <div>
+    <ul>
+    	<li ng-repeat="alphabet in alphabets">{{alphabet}}</li>
+    </ul>
+    </div>
+  </div>
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="../watch/watch-app.module.js"></script>
+  <script type="text/javascript" src="../watch/watch-app.controller.js"></script>
+</body>
+
+</html>
